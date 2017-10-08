@@ -5,14 +5,22 @@ This is an example project to work with Alora v2 Board and Azure IoT Hub for ESP
 
 This project depends on [ESPectro32](https://github.com/dycodex/ESPectro32) library!
 
+## Azure IoT Hub
+
+First thing first, you should have already set up an Azure IoT Hub and add a device. To create your Microsoft Azure IoT Hub and add a device, follow the instructions outlined in the [Setup IoT Hub Microsoft Azure Iot SDK](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md) page.
+
 ## ESPectro32
 
 The project is tested form [ESPectro32](https://shop.makestro.com/product/espectro32/) board. It is an IoT development board based-on ESP32 MCU, made by [DycodeX](https://dycodex.com).
+
+## Alora v2
+
+An awesome boards combine many sensors and actuators. Get one [here](https://shop.makestro.com/product/alorav2/).
 
 ## Getting Started
 
 * Clone this repo
 * Update submodules which it depends on: `git submodule update --init --recursive` 
 * There's a symbolic link `arduino-esp32`. Change (recreate) the symbolic link to point to your local [arduino-esp32](https://github.com/espressif/arduino-esp32) folder.
-* There're another two symbolic links: `Alora` and `AzureIoTHub`. Clone [ESPectro32-IDF](https://github.com/dycodex/ESPectro32-IDF), then recreate those two symbolic links to point to respective folder in ESPectro32-IDF folder you just cloned. 
+* There're another two symbolic links: `Alora` and `AzureIoTHub`. Clone [ESPectro32-IDF](https://github.com/dycodex/ESPectro32-IDF), then recreate those two symbolic links to point to respective folder in ESPectro32-IDF folder you just cloned. Don't ask me why for this hassle, I'm too lazy to make them as separate repos :) 
 * Try to `make`. Fingers crossed :)

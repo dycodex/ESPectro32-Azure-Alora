@@ -11,18 +11,18 @@
 
 #include <ESPectro32_Board.h>
 #include <AppSetting.h>
+#include <AloraSensorKit.h>
 
 #include <WiFiManager.h>
 #include "LedMatrixImages.h"
 #include <ESPectro32_LedMatrix_Animation.h>
 #include <ESPectro32_RGBLED_Animation.h>
 
-#include <AloraSensorKit.h>
 #include <AzureIoTHubMQTTClient.h>
 
-#define IOTHUB_HOSTNAME         "dycodex.azure-devices.net"
-#define DEVICE_ID               "espectro-01"
-#define DEVICE_KEY              "nhWXiles4WXOsM7DQjnTCrTk8zuZGdK55hHYF3BniLU=" //Primary key of the device
+#define IOTHUB_HOSTNAME         "[YOUR_AZURE_IOT_HUB].azure-devices.net"
+#define DEVICE_ID               "[YOUR_DEVICE_ID]"
+#define DEVICE_KEY              "[YOUR_DEVICE_KEY]" //Primary key of the device
 
 AzureIoTHubMQTTClient client(IOTHUB_HOSTNAME, DEVICE_ID, DEVICE_KEY);
 
